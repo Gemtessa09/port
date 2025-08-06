@@ -1,0 +1,526 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url("./photo/developer\ photo.webp")
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.section-title h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section Custom Styles */
+.skills-category {
+    margin-bottom: 1rem;
+}
+
+#skills {}
+
+.list-group-flush .list-group-item {
+    padding: 0.25rem 1rem;
+    border: none;
+    background-color: lightgray;
+}
+
+/* Footer Specific Styles */
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+
+.social-links a {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 575.98px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .header-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-subtitle p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p,
+    .about-background p,
+    .about-goals p,
+    .education-institution p,
+    .education-courses p,
+    .contact-info p,
+    .footer-about p,
+    .footer-contact p,
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .skills-category h4,
+    .footer-about h5,
+    .footer-links h5,
+    .footer-contact h5 {
+        font-size: 1.2rem;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .project-title h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-description p,
+    .project-tech p,
+    .project-features p {
+        font-size: 0.85rem;
+    }
+
+    .education-details h4 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form .form-label {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+
+    /* Two columns for skills below 768px */
+    #skills .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .about-images .col-12,
+    .skills-images .col-12 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+    .header-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-subtitle p {
+        font-size: 1.1rem;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p,
+    .about-background p,
+    .about-goals p,
+    .education-institution p,
+    .education-courses p,
+    .contact-info p,
+    .footer-about p,
+    .footer-contact p,
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .skills-category h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-about h5,
+    .footer-links h5,
+    .footer-contact h5 {
+        font-size: 1.3rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .project-title h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-description p,
+    .project-tech p,
+    .project-features p {
+        font-size: 0.95rem;
+    }
+
+    .education-details h4 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form .form-label {
+        font-size: 1rem;
+    }
+
+    /* Two columns for skills below 768px */
+    #skills .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .about-images .col-12,
+    .skills-images .col-12 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    .header-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-subtitle p {
+        font-size: 1.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p,
+    .about-background p,
+    .about-goals p,
+    .education-institution p,
+    .education-courses p,
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+
+    .skills-category h4 {
+        font-size: 1.5rem;
+    }
+
+    .list-group-item {
+        font-size: 1.1rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .project-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-description p,
+    .project-tech p,
+    .project-features p {
+        font-size: 1rem;
+    }
+
+    .education-details h4 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form .form-label {
+        font-size: 1.1rem;
+    }
+
+    /* Four columns for skills at 768px+ */
+    #skills .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .skills-category {
+        min-height: 180px;
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        padding: 50px 0;
+    }
+
+    .header-title h1 {
+        font-size: 3rem;
+    }
+
+    .header-subtitle p {
+        font-size: 1.3rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p,
+    .about-background p,
+    .about-goals p,
+    .education-institution p,
+    .education-courses p,
+    .contact-info p {
+        font-size: 1.2rem;
+    }
+
+    .skills-category h4 {
+        font-size: 1.6rem;
+    }
+
+    .list-group-item {
+        font-size: 1.2rem;
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .project-title h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-description p,
+    .project-tech p,
+    .project-features p {
+        font-size: 1.1rem;
+    }
+
+    .education-details h4 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form .form-label {
+        font-size: 1.2rem;
+    }
+
+    /* Four columns for skills */
+    #skills .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .skills-category {
+        min-height: 200px;
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Navbar and Card Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #007bff;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* SVG Animation Styles */
+.software-eng-graphic {
+    position: relative;
+}
+
+.interactive-svg {
+    transition: transform 0.3s ease;
+}
+
+.interactive-svg:hover {
+    transform: rotate(360deg);
+}
+
+.gear-path {
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+}
+
+.code-symbol {
+    transition: transform 0.5s ease, fill 0.3s ease;
+}
+
+.interactive-svg:hover .code-symbol:first-child {
+    transform: translateX(-20px);
+    fill: #28a745;
+}
+
+.interactive-svg:hover .code-symbol:last-child {
+    transform: translateX(20px);
+    fill: #dc3545;
+}
+
+/* Animation for Gear */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive SVG Adjustments */
+@media (max-width: 767.98px) {
+    .software-eng-graphic svg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+#about {
+
+    font-style: normal;
+
+}
+
+
+/* Back-to-Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Active Navbar Link Highlight */
+.nav-link.active {
+    font-weight: bold;
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+#my,
+#con,
+#abt,
+#skil1,
+#edu1 {
+
+    background-color: white;
+    font-style: normal;
+}
+
+#you,
+#edu4,
+#con2 {
+    background-color: white;
+}
+
+#skills,
+#education,
+#contact {
+    background-image: url("secondphot2.avif");
+}
+
+#skill2 {
+    background-color: white;
+}
+
+#contact {
+    background-color: white;
+}
+
+#con2 {
+    background-color: lightslategray;
+}
